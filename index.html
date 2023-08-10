@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #efefef;
+        }
+        .images-wrapper {
+            display: flex;
+        }
+        .images-wrapper img {
+            display: none;
+        }
+        .images-wrapper canvas {
+            margin: 10px auto;
+            border: 1px dashed #ccc;
+        }
+    </style>
+    <title>
+        TensorFlow.js Object Detection
+    </title>
+</head>
+    <body>
+    <h1>TensorFlow.js Object Detection</h1>
+    <label for='base_model'>Base Model</label>
+    <select id='base_model'>
+        <option value="lite_mobilenet_v2">SSD Lite Mobilenet V2</option>
+        <option value="mobilenet_v1">SSD Mobilenet v1</option>
+        <option value="mobilenet_v2">SSD Mobilenet v2</option>
+    </select>
+    <div id="images">
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>

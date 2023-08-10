@@ -1,0 +1,6 @@
+.idea
+node_modules
+*.jpg
+.cache
+dist
+.DS_Store
