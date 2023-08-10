@@ -15,7 +15,7 @@ let modelPromise;
 
 window.onload = () =>  {
     modelPromise = cocoSsd.load();
-    predict();
+    detect();
 }
 
 
@@ -25,10 +25,10 @@ select.onchange = async (event) => {
     model.dispose();
     modelPromise = cocoSsd.load(
         {base: event.srcElement.options[event.srcElement.selectedIndex].value});
-    predict();
+    detect();
 };
 
-function predict() {
+function detect() {
     const imgs = [
         image1URL,
         image2URL,
